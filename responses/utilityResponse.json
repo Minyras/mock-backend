@@ -1,0 +1,175 @@
+{
+  "result": "accepted",
+  "form_data": {
+    "path": "/payment/utility_payment",
+    "regions": [
+      {
+        "newline": true,
+        "groups": ["trn_data"],
+        "id": "left",
+        "title": "Left",
+        "span": 8
+      },
+      {
+        "newline": false,
+        "groups": ["info"],
+        "id": "right",
+        "title": "Right",
+        "span": 4
+      }
+    ],
+    "name": "ps_identification",
+    "groups": [
+      {
+        "path": "/payment/utility_payment",
+        "newline": true,
+        "additions": {
+          "template": false,
+          "info": true
+        },
+        "objects": [
+          {
+            "condition": true,
+            "options": [
+              {
+                "id": "ACC1",
+                "title": "Telefon nömrəsi"
+              }
+            ],
+            "id": "identification_type",
+            "type": "select",
+            "title": "İdentifikasiya Tipi",
+            "value": "ACC1",
+            "span": 6
+          },
+          {
+            "regexp": "^[0-9]{9}$",
+            "prefix": {
+              "show": true,
+              "options": [
+                {
+                  "id": "50",
+                  "title": "50"
+                },
+                {
+                  "id": "51",
+                  "title": "51"
+                },
+                {
+                  "id": "99",
+                  "title": "99"
+                },
+                {
+                  "id": "70",
+                  "title": "70"
+                },
+                {
+                  "id": "77",
+                  "title": "77"
+                },
+                {
+                  "id": "55",
+                  "title": "55"
+                },
+                {
+                  "id": "10",
+                  "title": "10"
+                },
+                {
+                  "id": "60",
+                  "title": "60"
+                }
+              ],
+              "value": "50"
+            },
+            "id": "ACC1",
+            "type": "text",
+            "title": "Ödәyici kodları",
+            "conditions": {
+              "identification_type": ["ACC1"]
+            },
+            "key": "identification_value",
+            "span": 6
+          },
+          {
+            "newline": true,
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "button_type": "dark",
+            "rule": "o",
+            "id": "cancel",
+            "check": false,
+            "title": "Cancel",
+            "type": "button",
+            "span": 6
+          },
+          {
+            "newline": false,
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "button_type": "yellow",
+            "rule": "o",
+            "id": "next",
+            "check": true,
+            "title": "Next",
+            "type": "button",
+            "span": 6
+          }
+        ],
+        "name": "ps_identification",
+        "description": "",
+        "id": "trn_data",
+        "type": "form",
+        "title": "Rabitə",
+        "span": 12,
+        "amount_flag": true
+      },
+      {
+        "newline": true,
+        "color": {
+          "border": "none",
+          "bg": "none",
+          "text": "black"
+        },
+        "objects": [
+          {
+            "icon_url": "/payments/merchants/gpp_941000.png",
+            "width": "50%",
+            "id": "card_img",
+            "type": "img",
+            "align": "center",
+            "span": 12
+          },
+          {
+            "font_weight": "700",
+            "line_height": "28px",
+            "color": "#1E293B",
+            "id": "title",
+            "type": "title",
+            "value": "Azercell Telekom MMC"
+          },
+          {
+            "font_weight": "400",
+            "line_height": "28px",
+            "color": "#1E293B",
+            "id": "description",
+            "type": "description",
+            "value": "<b>Merchant ID:</b> gpp_941000<br> <b>Merchant name:</b> Azercell Telekom MMC<br> <b>Merchant state:</b> active<br>"
+          }
+        ],
+        "description": " ",
+        "id": "info",
+        "title": "Melumat",
+        "span": 12
+      }
+    ],
+    "type": "form",
+    "title": "Azercell Telekom MMC"
+  },
+  "form_id": "dynamic",
+  "base_url": "https://core-dev.azerpost.az/public/dashboard"
+}

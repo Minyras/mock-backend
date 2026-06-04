@@ -1,0 +1,6 @@
+{
+  "result": "success",
+  "path": "/auth",
+  "form_id": "login",
+  "text": "Successful logout"
+}

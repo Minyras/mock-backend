@@ -1,0 +1,1076 @@
+{
+  "result": "success",
+  "form_data": {
+    "path": "/package/package_change",
+    "buttons": [],
+    "objects": [
+      {
+        "newline": true,
+        "options": [
+          {
+            "id": "package_id",
+            "title": "İzləmə nömrəsi"
+          },
+          {
+            "id": "first_name",
+            "title": "Ad"
+          },
+          {
+            "id": "last_name",
+            "title": "Soyad"
+          },
+          {
+            "id": "passport_id",
+            "title": "Vəsiqə məlumatı"
+          },
+          {
+            "id": "gsm_no",
+            "title": "Mobil nömrə"
+          },
+          {
+            "id": "verndor_order_no",
+            "title": "Sifariş nömrəsi"
+          }
+        ],
+        "id": "type",
+        "title": "Axtarış seçimi",
+        "type": "select",
+        "value": "package_id",
+        "span": 3
+      },
+      {
+        "newline": false,
+        "button_id": "search",
+        "rule": "o",
+        "id": "value",
+        "title": "məlumatı daxil et...",
+        "type": "text",
+        "span": 3
+      },
+      {
+        "newline": false,
+        "assign_data": {
+          "form_data": false,
+          "objects": ["type", "value"]
+        },
+        "button_type": "yellow",
+        "rule": "o",
+        "id": "search",
+        "check": false,
+        "title": "Axtarış",
+        "type": "button",
+        "span": 2
+      },
+      {
+        "pagination": {
+          "size": 25,
+          "type": "page"
+        },
+        "buttons": [
+          {
+            "icon_url": "/icons/fi_plus-circle.png",
+            "icon_color": "#FFFFFF",
+            "size": "sm",
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "id": "package_transfer_to_partner",
+            "title": "package_transfer_to_partner_lcl",
+            "type": "dark"
+          },
+          {
+            "icon_url": "/icons/fi_plus-circle.png",
+            "icon_color": "#FFFFFF",
+            "size": "sm",
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "id": "package_out_for_delivery",
+            "title": "Poçtalyonda",
+            "type": "dark"
+          },
+          {
+            "icon_url": "/icons/fi_plus-circle.png",
+            "icon_color": "#FFFFFF",
+            "size": "sm",
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "id": "package_delivery_failed",
+            "title": "Uğursuz çatdırılma",
+            "type": "dark"
+          },
+          {
+            "icon_url": "/icons/fi_plus-circle.png",
+            "icon_color": "#FFFFFF",
+            "size": "sm",
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "id": "package_delivered_by_courier",
+            "title": "Poçtalyon çatdırdı",
+            "type": "dark"
+          },
+          {
+            "icon_url": "/icons/fi_plus-circle.png",
+            "icon_color": "#FFFFFF",
+            "size": "sm",
+            "assign_data": {
+              "form_data": true,
+              "objects": []
+            },
+            "id": "package_delivered",
+            "title": "Təhvil vermək",
+            "type": "dark"
+          },
+          {
+            "icon_url": "/icons/Filter.png",
+            "icon_color": "#000000",
+            "size": "sm",
+            "id": "filter",
+            "title": "Filtr",
+            "type": "yellow"
+          }
+        ],
+        "data": [],
+        "editable": false,
+        "columns": [
+          {
+            "show": false,
+            "id": "id",
+            "type": "text",
+            "val_keys": ["id"]
+          },
+          {
+            "id": "order_date",
+            "title": "Qəbul tarixi",
+            "type": "textlist",
+            "val_keys": ["order_date", "order_time"]
+          },
+          {
+            "size": "sm",
+            "new_tab": true,
+            "id": "package_id",
+            "title": "İzləmə nömrəsi",
+            "type": "textbutton",
+            "align": "left",
+            "val_keys": ["package_id", "weight"]
+          },
+          {
+            "id": "cust_name",
+            "title": "Sifarişçi",
+            "align": "left",
+            "type": "textlist",
+            "val_keys": ["cust_name", "user_passport"]
+          },
+          {
+            "id": "vendor_id",
+            "title": "Şirkət",
+            "type": "textlist",
+            "align": "left",
+            "val_keys": ["vendor_name", "vendor_id"]
+          },
+          {
+            "id": "post_code",
+            "type": "text",
+            "title": "İndeks",
+            "val_keys": ["post_code"]
+          },
+          {
+            "options": [
+              {
+                "color": "#00826D",
+                "bg": "#EDFCF2",
+                "id": "1",
+                "title": "Hə "
+              },
+              {
+                "color": "#C31322",
+                "bg": "#FFE4E8",
+                "id": "-1",
+                "title": "Yox"
+              }
+            ],
+            "id": "declared",
+            "title": "Bəyan",
+            "type": "option",
+            "val_keys": ["declared"]
+          },
+          {
+            "options": [
+              {
+                "color": "#00826D",
+                "bg": "#EDFCF2",
+                "id": "0",
+                "title": "Tələb olunanadək"
+              },
+              {
+                "color": "#C31322",
+                "bg": "#FFE4E8",
+                "id": "1",
+                "title": "Evdə çatdırılma"
+              }
+            ],
+            "id": "delivery_type",
+            "title": "Çatdırılma növü",
+            "type": "option",
+            "val_keys": ["delivery_type"]
+          },
+          {
+            "types": ["text", "state"],
+            "id": "payment",
+            "title": "Xidmət haqqı",
+            "type": "textlist",
+            "val_keys": ["delivery_amount", "pym_state"]
+          },
+          {
+            "types": ["text", "state"],
+            "id": "vendor_payment",
+            "title": "Məhsulun dəyəri",
+            "type": "textlist",
+            "val_keys": ["vendor_pym_amount", "vendor_pym_state"]
+          },
+          {
+            "options": [
+              {
+                "color": "#00826D",
+                "bg": "#EDFCF2",
+                "id": "1",
+                "title": "Hə "
+              },
+              {
+                "color": "#C31322",
+                "bg": "#FFE4E8",
+                "id": "0",
+                "title": "Yox"
+              }
+            ],
+            "id": "fragile",
+            "title": "Kövrək",
+            "type": "option",
+            "val_keys": ["fragile"]
+          },
+          {
+            "options": [
+              {
+                "color": "#cfaa06",
+                "bg": "#f7fab4",
+                "id": "2",
+                "title": "pending_lcl"
+              },
+              {
+                "color": "#00826D",
+                "bg": "#EDFCF2",
+                "id": "1",
+                "title": "Hə "
+              },
+              {
+                "color": "#cc1013",
+                "bg": "#FFE4E8",
+                "id": "0",
+                "title": "Yox"
+              }
+            ],
+            "id": "timer",
+            "title": "Sayğac",
+            "type": "option",
+            "val_keys": ["timer_state", "timer"]
+          },
+          {
+            "fixed": "right",
+            "id": "state",
+            "title": "Status",
+            "type": "state",
+            "val_keys": ["order_state"]
+          },
+          {
+            "size": "xsm",
+            "fixed": "right",
+            "id": "print",
+            "title": "Çap et",
+            "type": "action",
+            "value": "print",
+            "on_row": true
+          }
+        ],
+        "scroll": "bottom",
+        "type": "table",
+        "rows": [
+          [
+            433710,
+            ["23-December-2025", "17:12:48"],
+            ["PC002-AZP22122025150492", "1.3 kg"],
+            ["Regr Reg", "6WTJL0M"],
+            ["Postcargo Temu", "PC002"],
+            "AZ2000",
+            false,
+            "0",
+            ["0 AZN", "pym_state_0"],
+            ["1.02 AZN", "pym_state_1"],
+            0,
+            ["0", "-"],
+            "state_7",
+            null
+          ],
+          [
+            433709,
+            ["23-December-2025", "17:12:48"],
+            ["PC002-AZP221220251504962", "1.3 kg"],
+            ["Regr Reg", "6WTJL0M"],
+            ["Postcargo Temu", "PC002"],
+            "AZ2000",
+            false,
+            "0",
+            ["0 AZN", "pym_state_0"],
+            ["1.02 AZN", "pym_state_1"],
+            0,
+            ["0", "-"],
+            "state_7",
+            null
+          ],
+          [
+            433708,
+            ["23-December-2025", "17:12:48"],
+            ["PC002-AZP221220251504961", "1.3 kg"],
+            ["Regr Reg", "6WTJL0M"],
+            ["Postcargo Temu", "PC002"],
+            "AZ2000",
+            false,
+            "0",
+            ["0 AZN", "pym_state_0"],
+            ["1.02 AZN", "pym_state_1"],
+            0,
+            ["0", "-"],
+            "state_7",
+            null
+          ],
+          [
+            433574,
+            ["09-October-2025", "16:10:76"],
+            ["PC002-058847-1212", "1 kg"],
+            ["string string", "string"],
+            ["Postcargo Temu", "PC002"],
+            "AZ1044",
+            true,
+            "1",
+            ["1.4 AZN", "pym_state_0"],
+            ["1 AZN", "pym_state_1"],
+            0,
+            ["0", "-"],
+            "state_28",
+            null
+          ],
+          [
+            433689,
+            ["15-December-2025", "15:12:80"],
+            ["TNL-AZP141020259595623-001", "1.31 kg"],
+            ["Stage Two", "6WTJL0M"],
+            ["Umico Logistics", "UL001"],
+            "AZ1005",
+            false,
+            "0",
+            ["1.45 AZN", "pym_state_0"],
+            ["1.02 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            433584,
+            ["03-November-2025", "18:11:95"],
+            ["TES321", "1.5 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.37 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            433582,
+            ["03-November-2025", "17:11:08"],
+            ["TES123", "1.5 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.37 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            433578,
+            ["22-October-2025", "13:10:85"],
+            ["TEST1123456789", "1.6 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Postcargo", "PC001"],
+            "AZ9095",
+            false,
+            "0",
+            ["0 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_12",
+            null
+          ],
+          [
+            433564,
+            ["-", null],
+            ["OM_TEST_BY_MURAD87658678576", "1.6 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Postcargo Temu", "PC002"],
+            "AZ1044",
+            false,
+            "1",
+            ["1.4 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["0", "8A:5G:20D:54S"],
+            "state_22",
+            null
+          ],
+          [
+            433554,
+            ["-", null],
+            ["OM_TEST_BY_MURAD1232", "1.6 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Postcargo Temu", "PC002"],
+            "AZ5400",
+            false,
+            "1",
+            ["1.4 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["0", "-"],
+            "state_28",
+            null
+          ],
+          [
+            432978,
+            ["-", null],
+            ["ASR99388600", "0.1 kg"],
+            ["undefined undefined", null],
+            ["Aser", "AR001"],
+            "AZ1118",
+            false,
+            "0",
+            ["0.96 AZN", "pym_state_0"],
+            ["8.08 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_4",
+            null
+          ],
+          [
+            432904,
+            ["01-May-2025", "11:05:04"],
+            ["TNL-AZP1238631906-001", "1.34 kg"],
+            ["Regr Reg", "6WTJL0M"],
+            ["Umico Logistics", "UL001"],
+            "AZ1000",
+            false,
+            "0",
+            ["1.47 AZN", "pym_state_0"],
+            ["1.02 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            432903,
+            ["01-May-2025", "14:05:20"],
+            ["TNL-AZP1238631904-001", "1.34 kg"],
+            ["Regr Reg", "6WTJL0M"],
+            ["Umico Logistics", "UL001"],
+            "AZ1000",
+            false,
+            "0",
+            ["1.47 AZN", "pym_state_0"],
+            ["1.02 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            424591,
+            ["23-December-2024", "16:12:75"],
+            ["TNL-AZP1237286490-001", "1 kg"],
+            ["Regr Reg", "6WTJL0M"],
+            ["Umico Logistics", "UL001"],
+            "AZ1000",
+            false,
+            "0",
+            ["2 AZN", "pym_state_0"],
+            ["1 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            424411,
+            ["16-December-2024", "10:12:44"],
+            ["02000010001000200000000172837489687", "12 kg"],
+            ["Nicat Ahmedov Nicat Ahmedov", "76LK208"],
+            ["Test vendor", "TST01"],
+            "AZ1500",
+            false,
+            "0",
+            ["0 AZN", "pym_state_0"],
+            ["0.1 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423847,
+            ["03-December-2024", "11:12:65"],
+            ["228", "1.6 kg"],
+            ["ARZU TEST", "a1erust2"],
+            ["XX", "XX001"],
+            "AZ1044",
+            false,
+            "0",
+            ["4.12 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423811,
+            ["25-October-2024", "17:10:92"],
+            ["AA126", "3 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.97 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423810,
+            ["25-October-2024", "17:10:55"],
+            ["AA125", "1.5 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.37 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423809,
+            ["25-October-2024", "16:10:70"],
+            ["AA124", "1.7 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.45 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423808,
+            ["25-October-2024", "16:10:07"],
+            ["AA123", "1.7 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.45 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423799,
+            ["23-October-2024", "18:10:46"],
+            ["AZ1115", "1.7 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.45 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423798,
+            ["23-October-2024", "18:10:04"],
+            ["AZ1114", "1.7 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.45 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423797,
+            ["23-October-2024", "18:10:79"],
+            ["AZ1113", "1.7 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.45 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423796,
+            ["23-October-2024", "18:10:52"],
+            ["AZ1112", "1.6 kg"],
+            ["ARZU  ŞİRALIYEVA", "a1erust2"],
+            ["Mobex", "test123"],
+            "APM1000",
+            false,
+            "0",
+            ["2.41 AZN", "pym_state_0"],
+            ["1.36 AZN", "pym_state_1"],
+            0,
+            ["3", "-"],
+            "state_1",
+            null
+          ],
+          [
+            423685,
+            ["-", null],
+            ["RETAZP000000218", "1.5 kg"],
+            ["Bryant Abbott", "0"],
+            ["Temu", "TM001"],
+            "AZ1029",
+            false,
+            "0",
+            ["3.9 AZN", "pym_state_0"],
+            ["0 AZN", "pym_state_0"],
+            0,
+            ["3", "-"],
+            "state_12",
+            null
+          ]
+        ],
+        "states": [
+          {
+            "order_no": 0,
+            "code": "0",
+            "color": "#5ECDE4",
+            "bg": "#E5F8FB",
+            "name": "Sifariş verildi",
+            "id": "state_0",
+            "title": "Sifariş verildi"
+          },
+          {
+            "order_no": 10,
+            "code": "1",
+            "color": "#F1A252",
+            "bg": "#FDF3E9",
+            "name": "Sifariş qəbul olundu",
+            "id": "state_1",
+            "title": "Sifariş qəbul olundu"
+          },
+          {
+            "order_no": 30,
+            "code": "3",
+            "color": "#D95E5A",
+            "bg": "#F9EBEA",
+            "name": "Yoldadır",
+            "id": "state_3",
+            "title": "Yoldadır"
+          },
+          {
+            "order_no": 40,
+            "code": "4",
+            "color": "#5FC375",
+            "bg": "#E8F7EE",
+            "name": "Təhvil verilməyə hazırdır",
+            "id": "state_4",
+            "title": "Təhvil verilməyə hazırdır"
+          },
+          {
+            "order_no": 50,
+            "code": "5",
+            "color": "#D85955",
+            "bg": "#F9EBEA",
+            "name": "Təhvil verildi",
+            "id": "state_5",
+            "title": "Təhvil verildi"
+          },
+          {
+            "order_no": 60,
+            "code": "6",
+            "color": "#2E6CBF",
+            "bg": "#EEEDFC",
+            "name": "Ləğv edildi",
+            "id": "state_6",
+            "title": "Ləğv edildi"
+          },
+          {
+            "order_no": 70,
+            "code": "7",
+            "color": "#F1A252",
+            "bg": "#FDF3E9",
+            "name": "Konteyner qəbul olundu",
+            "id": "state_7",
+            "title": "Konteyner qəbul olundu"
+          },
+          {
+            "order_no": 80,
+            "code": "8",
+            "color": "#D85955",
+            "bg": "#F9EBEA",
+            "name": "Qayıdış başladı",
+            "id": "state_8",
+            "title": "Qayıdış başladı"
+          },
+          {
+            "order_no": 90,
+            "code": "9",
+            "color": "#D95E5A",
+            "bg": "#F9EBEA",
+            "name": "Qayıdış yoldadır",
+            "id": "state_9",
+            "title": "Qayıdış yoldadır"
+          },
+          {
+            "order_no": 100,
+            "code": "10",
+            "color": "#F1A252",
+            "bg": "#FDF3E9",
+            "name": "Qayıdış PDM-də qəbul olundu",
+            "id": "state_10",
+            "title": "Qayıdış PDM-də qəbul olundu"
+          },
+          {
+            "order_no": 110,
+            "code": "11",
+            "color": "#5FC375",
+            "bg": "#E8F7EE",
+            "name": "Qayıdış təhvil verilməyə hazırdır",
+            "id": "state_11",
+            "title": "Qayıdış təhvil verilməyə hazırdır"
+          },
+          {
+            "order_no": 120,
+            "code": "12",
+            "color": "#D85955",
+            "bg": "#F9EBEA",
+            "name": "Qayıdış təhvil verildi",
+            "id": "state_12",
+            "title": "Qayıdış təhvil verildi"
+          },
+          {
+            "order_no": 130,
+            "code": "13",
+            "color": "#F1A252",
+            "bg": "#FDF3E9",
+            "name": "RÇM-də qəbul olundu",
+            "id": "state_13",
+            "title": "RÇM-də qəbul olundu"
+          },
+          {
+            "order_no": 140,
+            "code": "14",
+            "color": "#D95E5A",
+            "bg": "#F9EBEA",
+            "name": "RÇM-dən yola düşdü",
+            "id": "state_14",
+            "title": "RÇM-dən yola düşdü"
+          },
+          {
+            "order_no": 150,
+            "code": "15",
+            "color": "#F1A252",
+            "bg": "#FDF3E9",
+            "name": "RÇM-də qayıdış qəbul olundu",
+            "id": "state_15",
+            "title": "RÇM-də qayıdış qəbul olundu"
+          },
+          {
+            "order_no": 160,
+            "code": "16",
+            "color": "#D95E5A",
+            "bg": "#F9EBEA",
+            "name": "RÇM-dən qayıdış yola düşdü",
+            "id": "state_16",
+            "title": "RÇM-dən qayıdış yola düşdü"
+          },
+          {
+            "order_no": 170,
+            "code": "17",
+            "color": "#2E6CBF",
+            "bg": "#EEEDFC",
+            "name": "Yalnış şöbə",
+            "id": "state_17",
+            "title": "Yalnış şöbə"
+          },
+          {
+            "order_no": 180,
+            "code": "18",
+            "color": "#4CAF50",
+            "bg": "#E8F5E9",
+            "name": "Sifariş yaradıldı",
+            "id": "state_18",
+            "title": "Sifariş yaradıldı"
+          },
+          {
+            "order_no": 190,
+            "code": "19",
+            "color": "#A67C00",
+            "bg": "#FFF5E6",
+            "name": "Gömrüyə daxil oldu",
+            "id": "state_19",
+            "title": "Gömrüyə daxil oldu"
+          },
+          {
+            "order_no": 200,
+            "code": "20",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrükdə saxlanıldı",
+            "id": "state_20",
+            "title": "Gömrükdə saxlanıldı"
+          },
+          {
+            "order_no": 210,
+            "code": "21",
+            "color": "#5CB85C",
+            "bg": "#EAF8EA",
+            "name": "PDM-ə yola salındı",
+            "id": "state_21",
+            "title": "PDM-ə yola salındı"
+          },
+          {
+            "order_no": 220,
+            "code": "22",
+            "color": "#F0AD4E",
+            "bg": "#FFF3E0",
+            "name": "Poçtalyonda",
+            "id": "state_22",
+            "title": "Poçtalyonda"
+          },
+          {
+            "order_no": 230,
+            "code": "23",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Uğursuz çatdırılma",
+            "id": "state_23",
+            "title": "Uğursuz çatdırılma"
+          },
+          {
+            "order_no": 250,
+            "code": "25",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrük yoxlanışında",
+            "id": "state_25",
+            "title": "Gömrük yoxlanışında"
+          },
+          {
+            "order_no": 260,
+            "code": "26",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrükdən daşıyıcıya ötürüldü",
+            "id": "state_26",
+            "title": "Gömrükdən daşıyıcıya ötürüldü"
+          },
+          {
+            "order_no": 260,
+            "code": "27",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrük yoxlanışı tamamlandı",
+            "id": "state_27",
+            "title": "Gömrük yoxlanışı tamamlandı"
+          },
+          {
+            "order_no": 280,
+            "code": "28",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Çatdırılmağa hazırdır",
+            "id": "state_28",
+            "title": "Çatdırılmağa hazırdır"
+          },
+          {
+            "order_no": 290,
+            "code": "29",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Çatdırılma növü dəyişdirildi",
+            "id": "state_29",
+            "title": "Çatdırılma növü dəyişdirildi"
+          },
+          {
+            "order_no": 300,
+            "code": "30",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrük yoxlama zonasına daxil oldu",
+            "id": "state_30",
+            "title": "Gömrük yoxlama zonasına daxil oldu"
+          },
+          {
+            "order_no": 310,
+            "code": "31",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrük yoxlama zonasını tərk etdi",
+            "id": "state_31",
+            "title": "Gömrük yoxlama zonasını tərk etdi"
+          },
+          {
+            "order_no": 320,
+            "code": "32",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Sayım tamamlanıb",
+            "id": "state_32",
+            "title": "Sayım tamamlanıb"
+          },
+          {
+            "order_no": 330,
+            "code": "33",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Bəyan olundu",
+            "id": "state_33",
+            "title": "Bəyan olundu"
+          },
+          {
+            "order_no": 340,
+            "code": "34",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Bəyan gözlənilir",
+            "id": "state_34",
+            "title": "Bəyan gözlənilir"
+          },
+          {
+            "order_no": 350,
+            "code": "35",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Gömrük tərəfindən geri çağırıldı",
+            "id": "state_35",
+            "title": "Gömrük tərəfindən geri çağırıldı"
+          },
+          {
+            "order_no": 360,
+            "code": "36",
+            "color": "#D9534F",
+            "bg": "#FDECEC",
+            "name": "Bağlama partnyora təhvil verildi",
+            "id": "state_36",
+            "title": "Bağlama partnyora təhvil verildi"
+          },
+          {
+            "code": "0",
+            "color": "#C31322",
+            "bg": "#FFE4E8",
+            "name": "unpaid",
+            "id": "pym_state_0",
+            "title": "Ödənilməmiş"
+          },
+          {
+            "code": "1",
+            "color": "#00826D",
+            "bg": "#EDFCF2",
+            "name": "paid",
+            "id": "pym_state_1",
+            "title": "Ödənilmiş"
+          }
+        ],
+        "newline": true,
+        "search": false,
+        "addable": true,
+        "checkbox": true,
+        "checkboxAll": false,
+        "id": "packages",
+        "row_size": 0,
+        "actions": [
+          {
+            "icon_url": "/icons/file-text.png",
+            "default": true,
+            "id": "details",
+            "title": "Ətraflı bax"
+          },
+          {
+            "icon_url": "/icons/printer.png",
+            "default": true,
+            "id": "print",
+            "title": ""
+          },
+          {
+            "icon_url": "/icons/fi_edit.png",
+            "default": true,
+            "id": "change_state",
+            "title": "Təhvil vermək"
+          }
+        ],
+        "span": 12
+      }
+    ],
+    "name": "order_list",
+    "description": " Bağlamaların statusunun dəyişdirilməsi",
+    "id": "dynamic",
+    "type": "form",
+    "title": "Bağlamaların siyahısı"
+  },
+  "alert": {},
+  "base_url": "https://core-dev.azerpost.az/public/dashboard",
+  "form_id": "dynamic"
+}

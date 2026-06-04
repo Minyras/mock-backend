@@ -1,0 +1,850 @@
+
+
+{
+    "result": "success",
+    "form_data": {
+        "path": "/main/homepage",
+        "buttons": [],
+        "path_old": "/main/homepage",
+        "objects": [
+            {
+                "newline": true,
+                "subtype": "standart",
+                "width": 6,
+                "scroll": "v",
+                "options": [
+                    {
+                        "icon_url": "/icons/states/box.png",
+                        "order_no": 0,
+                        "icon_color": "#5ECDE4",
+                        "name": "Sifariş verildi",
+                        "icon": {
+                            "bg_color": "#E5F8FB",
+                            "color": "#5ECDE4",
+                            "url": "/icons/states/box.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#E5F8FB",
+                            "color": "#5ECDE4",
+                            "url": "/icons/states/box.png"
+                        },
+                        "icon_bg_color": "#E5F8FB",
+                        "description": "0 - Sifariş verildi",
+                        "id": "0",
+                        "title": "2334",
+                        "value": "Sifariş verildi"
+                    },
+                    {
+                        "icon_url": "/icons/states/like.png",
+                        "order_no": 10,
+                        "icon_color": "#F1A252",
+                        "name": "Sifariş qəbul olundu",
+                        "icon": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_bg_color": "#FDF3E9",
+                        "description": "1 - Sifariş qəbul olundu",
+                        "id": "1",
+                        "title": "3",
+                        "value": "Sifariş qəbul olundu"
+                    },
+                    {
+                        "icon_url": "/icons/states/bus.png",
+                        "order_no": 30,
+                        "icon_color": "#D95E5A",
+                        "name": "Yoldadır",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "3 - Yoldadır",
+                        "id": "3",
+                        "title": "0",
+                        "value": "Yoldadır"
+                    },
+                    {
+                        "icon_url": "/icons/states/shopping.png",
+                        "order_no": 40,
+                        "icon_color": "#5FC375",
+                        "name": "Təhvil verilməyə hazırdır",
+                        "icon": {
+                            "bg_color": "#E8F7EE",
+                            "color": "#5FC375",
+                            "url": "/icons/states/shopping.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#E8F7EE",
+                            "color": "#5FC375",
+                            "url": "/icons/states/shopping.png"
+                        },
+                        "icon_bg_color": "#E8F7EE",
+                        "description": "4 - Təhvil verilməyə hazırdır",
+                        "id": "4",
+                        "title": "1",
+                        "value": "Təhvil verilməyə hazırdır"
+                    },
+                    {
+                        "icon_url": "/icons/states/suprice.png",
+                        "order_no": 50,
+                        "icon_color": "#D85955",
+                        "name": "Təhvil verildi",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D85955",
+                            "url": "/icons/states/suprice.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D85955",
+                            "url": "/icons/states/suprice.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "5 - Təhvil verildi",
+                        "id": "5",
+                        "title": "13",
+                        "value": "Təhvil verildi"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 60,
+                        "icon_color": "#2E6CBF",
+                        "name": "Ləğv edildi",
+                        "icon": {
+                            "bg_color": "#EEEDFC",
+                            "color": "#2E6CBF",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#EEEDFC",
+                            "color": "#2E6CBF",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#EEEDFC",
+                        "description": "6 - Ləğv edildi",
+                        "id": "6",
+                        "title": "3",
+                        "value": "Ləğv edildi"
+                    },
+                    {
+                        "icon_url": "/icons/states/like.png",
+                        "order_no": 70,
+                        "icon_color": "#F1A252",
+                        "name": "Konteyner qəbul olundu",
+                        "icon": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_bg_color": "#FDF3E9",
+                        "description": "7 - Konteyner qəbul olundu",
+                        "id": "7",
+                        "title": "3",
+                        "value": "Konteyner qəbul olundu"
+                    },
+                    {
+                        "icon_url": "/icons/states/bus.png",
+                        "order_no": 80,
+                        "icon_color": "#D85955",
+                        "name": "Qayıdış başladı",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D85955",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D85955",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "8 - Qayıdış başladı",
+                        "id": "8",
+                        "title": "0",
+                        "value": "Qayıdış başladı"
+                    },
+                    {
+                        "icon_url": "/icons/states/bus.png",
+                        "order_no": 90,
+                        "icon_color": "#D95E5A",
+                        "name": "Qayıdış yoldadır",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "9 - Qayıdış yoldadır",
+                        "id": "9",
+                        "title": "0",
+                        "value": "Qayıdış yoldadır"
+                    },
+                    {
+                        "icon_url": "/icons/states/like.png",
+                        "order_no": 100,
+                        "icon_color": "#F1A252",
+                        "name": "Qayıdış PDM-də qəbul olundu",
+                        "icon": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_bg_color": "#FDF3E9",
+                        "description": "10 - Qayıdış PDM-də qəbul olundu",
+                        "id": "10",
+                        "title": "0",
+                        "value": "Qayıdış PDM-də qəbul olundu"
+                    },
+                    {
+                        "icon_url": "/icons/states/shopping.png",
+                        "order_no": 110,
+                        "icon_color": "#5FC375",
+                        "name": "Qayıdış təhvil verilməyə hazırdır",
+                        "icon": {
+                            "bg_color": "#E8F7EE",
+                            "color": "#5FC375",
+                            "url": "/icons/states/shopping.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#E8F7EE",
+                            "color": "#5FC375",
+                            "url": "/icons/states/shopping.png"
+                        },
+                        "icon_bg_color": "#E8F7EE",
+                        "description": "11 - Qayıdış təhvil verilməyə hazırdır",
+                        "id": "11",
+                        "title": "0",
+                        "value": "Qayıdış təhvil verilməyə hazırdır"
+                    },
+                    {
+                        "icon_url": "/icons/states/suprice.png",
+                        "order_no": 120,
+                        "icon_color": "#D85955",
+                        "name": "Qayıdış təhvil verildi",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D85955",
+                            "url": "/icons/states/suprice.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D85955",
+                            "url": "/icons/states/suprice.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "12 - Qayıdış təhvil verildi",
+                        "id": "12",
+                        "title": "1",
+                        "value": "Qayıdış təhvil verildi"
+                    },
+                    {
+                        "icon_url": "/icons/states/like.png",
+                        "order_no": 130,
+                        "icon_color": "#F1A252",
+                        "name": "RÇM-də qəbul olundu",
+                        "icon": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_bg_color": "#FDF3E9",
+                        "description": "13 - RÇM-də qəbul olundu",
+                        "id": "13",
+                        "title": "2",
+                        "value": "RÇM-də qəbul olundu"
+                    },
+                    {
+                        "icon_url": "/icons/states/bus.png",
+                        "order_no": 140,
+                        "icon_color": "#D95E5A",
+                        "name": "RÇM-dən yola düşdü",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "14 - RÇM-dən yola düşdü",
+                        "id": "14",
+                        "title": "0",
+                        "value": "RÇM-dən yola düşdü"
+                    },
+                    {
+                        "icon_url": "/icons/states/like.png",
+                        "order_no": 150,
+                        "icon_color": "#F1A252",
+                        "name": "RÇM-də qayıdış qəbul olundu",
+                        "icon": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDF3E9",
+                            "color": "#F1A252",
+                            "url": "/icons/states/like.png"
+                        },
+                        "icon_bg_color": "#FDF3E9",
+                        "description": "15 - RÇM-də qayıdış qəbul olundu",
+                        "id": "15",
+                        "title": "0",
+                        "value": "RÇM-də qayıdış qəbul olundu"
+                    },
+                    {
+                        "icon_url": "/icons/states/bus.png",
+                        "order_no": 160,
+                        "icon_color": "#D95E5A",
+                        "name": "RÇM-dən qayıdış yola düşdü",
+                        "icon": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#F9EBEA",
+                            "color": "#D95E5A",
+                            "url": "/icons/states/bus.png"
+                        },
+                        "icon_bg_color": "#F9EBEA",
+                        "description": "16 - RÇM-dən qayıdış yola düşdü",
+                        "id": "16",
+                        "title": "0",
+                        "value": "RÇM-dən qayıdış yola düşdü"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 170,
+                        "icon_color": "#2E6CBF",
+                        "name": "Yalnış şöbə",
+                        "icon": {
+                            "bg_color": "#EEEDFC",
+                            "color": "#2E6CBF",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#EEEDFC",
+                            "color": "#2E6CBF",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#EEEDFC",
+                        "description": "17 - Yalnış şöbə",
+                        "id": "17",
+                        "title": "1",
+                        "value": "Yalnış şöbə"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 180,
+                        "icon_color": "#4CAF50",
+                        "name": "Sifariş yaradıldı",
+                        "icon": {
+                            "bg_color": "#E8F5E9",
+                            "color": "#4CAF50",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#E8F5E9",
+                            "color": "#4CAF50",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#E8F5E9",
+                        "description": "18 - Sifariş yaradıldı",
+                        "id": "18",
+                        "title": "5",
+                        "value": "Sifariş yaradıldı"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 190,
+                        "icon_color": "#A67C00",
+                        "name": "Gömrüyə daxil oldu",
+                        "icon": {
+                            "bg_color": "#FFF5E6",
+                            "color": "#A67C00",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FFF5E6",
+                            "color": "#A67C00",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FFF5E6",
+                        "description": "19 - Gömrüyə daxil oldu",
+                        "id": "19",
+                        "title": "0",
+                        "value": "Gömrüyə daxil oldu"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 200,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrükdə saxlanıldı",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "20 - Gömrükdə saxlanıldı",
+                        "id": "20",
+                        "title": "3",
+                        "value": "Gömrükdə saxlanıldı"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 210,
+                        "icon_color": "#5CB85C",
+                        "name": "PDM-ə yola salındı",
+                        "icon": {
+                            "bg_color": "#EAF8EA",
+                            "color": "#5CB85C",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#EAF8EA",
+                            "color": "#5CB85C",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#EAF8EA",
+                        "description": "21 - PDM-ə yola salındı",
+                        "id": "21",
+                        "title": "7",
+                        "value": "PDM-ə yola salındı"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 220,
+                        "icon_color": "#F0AD4E",
+                        "name": "Poçtalyonda",
+                        "icon": {
+                            "bg_color": "#FFF3E0",
+                            "color": "#F0AD4E",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FFF3E0",
+                            "color": "#F0AD4E",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FFF3E0",
+                        "description": "22 - Poçtalyonda",
+                        "id": "22",
+                        "title": "1",
+                        "value": "Poçtalyonda"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 230,
+                        "icon_color": "#D9534F",
+                        "name": "Uğursuz çatdırılma",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "23 - Uğursuz çatdırılma",
+                        "id": "23",
+                        "title": "0",
+                        "value": "Uğursuz çatdırılma"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 250,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrük yoxlanışında",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "25 - Gömrük yoxlanışında",
+                        "id": "25",
+                        "title": "1",
+                        "value": "Gömrük yoxlanışında"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 260,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrükdən daşıyıcıya ötürüldü",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "26 - Gömrükdən daşıyıcıya ötürüldü",
+                        "id": "26",
+                        "title": "0",
+                        "value": "Gömrükdən daşıyıcıya ötürüldü"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 260,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrük yoxlanışı tamamlandı",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "27 - Gömrük yoxlanışı tamamlandı",
+                        "id": "27",
+                        "title": "0",
+                        "value": "Gömrük yoxlanışı tamamlandı"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 280,
+                        "icon_color": "#D9534F",
+                        "name": "Çatdırılmağa hazırdır",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "28 - Çatdırılmağa hazırdır",
+                        "id": "28",
+                        "title": "2",
+                        "value": "Çatdırılmağa hazırdır"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 290,
+                        "icon_color": "#D9534F",
+                        "name": "Çatdırılma növü dəyişdirildi",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "29 - Çatdırılma növü dəyişdirildi",
+                        "id": "29",
+                        "title": "0",
+                        "value": "Çatdırılma növü dəyişdirildi"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 300,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrük yoxlama zonasına daxil oldu",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "30 - Gömrük yoxlama zonasına daxil oldu",
+                        "id": "30",
+                        "title": "0",
+                        "value": "Gömrük yoxlama zonasına daxil oldu"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 310,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrük yoxlama zonasını tərk etdi",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "31 - Gömrük yoxlama zonasını tərk etdi",
+                        "id": "31",
+                        "title": "0",
+                        "value": "Gömrük yoxlama zonasını tərk etdi"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 320,
+                        "icon_color": "#D9534F",
+                        "name": "Sayım tamamlanıb",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "32 - Sayım tamamlanıb",
+                        "id": "32",
+                        "title": "0",
+                        "value": "Sayım tamamlanıb"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 330,
+                        "icon_color": "#D9534F",
+                        "name": "Bəyan olundu",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "33 - Bəyan olundu",
+                        "id": "33",
+                        "title": "0",
+                        "value": "Bəyan olundu"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 340,
+                        "icon_color": "#D9534F",
+                        "name": "Bəyan gözlənilir",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "34 - Bəyan gözlənilir",
+                        "id": "34",
+                        "title": "0",
+                        "value": "Bəyan gözlənilir"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 350,
+                        "icon_color": "#D9534F",
+                        "name": "Gömrük tərəfindən geri çağırıldı",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "35 - Gömrük tərəfindən geri çağırıldı",
+                        "id": "35",
+                        "title": "0",
+                        "value": "Gömrük tərəfindən geri çağırıldı"
+                    },
+                    {
+                        "icon_url": "/icons/fi_trash-2.png",
+                        "order_no": 360,
+                        "icon_color": "#D9534F",
+                        "name": "Bağlama partnyora təhvil verildi",
+                        "icon": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_r": {
+                            "bg_color": "#FDECEC",
+                            "color": "#D9534F",
+                            "url": "/icons/fi_trash-2.png"
+                        },
+                        "icon_bg_color": "#FDECEC",
+                        "description": "36 - Bağlama partnyora təhvil verildi",
+                        "id": "36",
+                        "title": "1",
+                        "value": "Bağlama partnyora təhvil verildi"
+                    }
+                ],
+                "id": "state_metrics",
+                "row": 2,
+                "trigger": true,
+                "type": "menu_list_button",
+                "span": 12
+            },
+            {
+                "newline": true,
+                "clickable": true,
+                "options": [
+                    {
+                        "id": "today",
+                        "title": "This Day",
+                        "value": 0,
+                        "span": 4
+                    },
+                    {
+                        "id": "month",
+                        "title": "Last month",
+                        "value": 220.43,
+                        "span": 4
+                    },
+                    {
+                        "id": "year",
+                        "title": "This Year",
+                        "value": 4435.28,
+                        "span": 4
+                    }
+                ],
+                "id": "grid_1",
+                "title": "Grip type 1",
+                "type": "grid",
+                "span": 4
+            },
+            {
+                "newline": false,
+                "options": [
+                    {
+                        "id": "today",
+                        "title": "This Day",
+                        "value": "15.000 AZN",
+                        "span": 4
+                    },
+                    {
+                        "id": "month",
+                        "title": "Last month",
+                        "value": "123.000 AZN",
+                        "span": 4
+                    },
+                    {
+                        "id": "year",
+                        "title": "This Year",
+                        "value": "670.820 AZN",
+                        "span": 4
+                    }
+                ],
+                "id": "grid_2",
+                "title": "Grip type 2",
+                "type": "grid",
+                "span": 4
+            },
+            {
+                "newline": false,
+                "clickable": true,
+                "options": [
+                    {
+                        "id": "today",
+                        "title": "This Day",
+                        "value": "15.000 AZN",
+                        "span": 4
+                    },
+                    {
+                        "id": "month",
+                        "title": "Last month",
+                        "value": "123.000 AZN",
+                        "span": 4
+                    },
+                    {
+                        "id": "year",
+                        "title": "This Year",
+                        "value": "670.820 AZN",
+                        "span": 4
+                    }
+                ],
+                "id": "grid_3",
+                "title": "Grip type 3",
+                "type": "grid",
+                "span": 4
+            }
+        ],
+        "name": "homepage",
+        "description": "",
+        "id": "dynamic",
+        "type": "form",
+        "title": "Məlumat paneli"
+    },
+    "base_url": "https://core-dev.azerpost.az/public/dashboard",
+    "form_id": "dynamic"
+}

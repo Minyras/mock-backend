@@ -1,0 +1,627 @@
+{
+  "result": "success",
+  "menu_type": "sidebar",
+  "form_id": "homepage",
+  "base_url": "https://core-dev.azerpost.az/public/dashboard",
+  "profile_menu": [
+    {
+      "icon_url": "/icons/menu/settings.png",
+      "path": "/profile/settings",
+      "name": "Şəxsi məlumatlar",
+      "dynamic": false,
+      "id": "1",
+      "type": "request"
+    },
+    {
+      "icon_url": "/icons/menu/logout.svg",
+      "path": "/atomic/logout",
+      "name": "Çıxış",
+      "dynamic": false,
+      "id": "2",
+      "type": "request"
+    }
+  ],
+  "menu": [
+    {
+      "icon_url": "/icons/menu/account.svg",
+      "path": "/package",
+      "subs": [
+        {
+          "path": "/package/package_create",
+          "name": "Bağlamanın yaradılması",
+          "dynamic": true,
+          "id": "2007",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_receive",
+          "name": "Bağlamaların qəbulu",
+          "dynamic": true,
+          "id": "2001",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_change",
+          "name": "Bağlamaların siyahısı",
+          "dynamic": true,
+          "id": "2002",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_list",
+          "name": "Sifarişlərin siyahısı",
+          "dynamic": true,
+          "id": "2004",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_details",
+          "name": "İzləmə",
+          "dynamic": true,
+          "id": "2003",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_canceled",
+          "name": "Geri qaytarılmış",
+          "dynamic": true,
+          "id": "2005",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_archive",
+          "name": "Arxiv",
+          "dynamic": true,
+          "id": "2006",
+          "type": "form"
+        },
+        {
+          "path": "/package/package_edit",
+          "name": "Bağlama düzəlişi",
+          "dynamic": true,
+          "id": "2008",
+          "type": "form"
+        },
+        {
+          "path": "/package/events_delete",
+          "name": "Statusun silinməsi",
+          "dynamic": true,
+          "id": "2009",
+          "type": "form"
+        }
+      ],
+      "name": "Bağlamalar",
+      "dynamic": true,
+      "id": "2000"
+    },
+    {
+      "icon_url": "/icons/menu/loan.svg",
+      "path": "/index",
+      "subs": [
+        {
+          "path": "/index/index_place",
+          "name": "index_place_lcl",
+          "dynamic": true,
+          "id": "4001",
+          "type": "form"
+        }
+      ],
+      "name": "Indeks",
+      "dynamic": true,
+      "id": "4000"
+    },
+    {
+      "path": "/ib_mb",
+      "subs": [
+        {
+          "path": "/ib_mb/reports",
+          "name": "reports_lcl",
+          "dynamic": true,
+          "id": "4201",
+          "type": "form"
+        },
+        {
+          "path": "/ib_mb/rate_requests",
+          "name": "Güzəştli Məzənnə",
+          "dynamic": true,
+          "id": "4202",
+          "type": "form"
+        },
+        {
+          "path": "/ib_mb/users",
+          "name": "İstifadəçilər",
+          "dynamic": true,
+          "id": "4203",
+          "type": "form"
+        },
+        {
+          "path": "/ib_mb/anipay",
+          "name": "anipay_lcl",
+          "dynamic": true,
+          "id": "4204",
+          "type": "form"
+        }
+      ],
+      "name": "İnternet/Mobil Bankçılıq",
+      "dynamic": true,
+      "id": "4200"
+    },
+    {
+      "path": "/documents",
+      "subs": [
+        {
+          "path": "/documents/document_transfer",
+          "name": "document_transfer_lcl",
+          "dynamic": true,
+          "id": "4101",
+          "type": "form"
+        },
+        {
+          "path": "/documents/document_transfer_report",
+          "name": "document_transfer_report_lcl",
+          "dynamic": true,
+          "id": "4102",
+          "type": "form"
+        }
+      ],
+      "name": "Sənədlər",
+      "dynamic": true,
+      "id": "4100"
+    },
+    {
+      "path": "/advance",
+      "subs": [
+        {
+          "path": "/advance/download_document",
+          "name": "Sənədi yüklə",
+          "dynamic": true,
+          "id": "3901",
+          "type": "form"
+        }
+      ],
+      "name": "Avans sənədləri",
+      "dynamic": true,
+      "id": "3900"
+    },
+    {
+      "icon_url": "/icons/menu/loan.svg",
+      "path": "/logistics",
+      "subs": [
+        {
+          "path": "/logistics/container_receive",
+          "name": "Konteynerin qəbulu",
+          "dynamic": true,
+          "id": "2201",
+          "type": "form"
+        },
+        {
+          "path": "/logistics/container_list",
+          "name": "Konteynerlərin siyahısı",
+          "dynamic": true,
+          "id": "2202",
+          "type": "form"
+        },
+        {
+          "path": "/logistics/container_add",
+          "name": "Konteyner yaradılması",
+          "dynamic": true,
+          "id": "2205",
+          "type": "form"
+        },
+        {
+          "path": "/logistics/shipment_list",
+          "name": "Göndərişlərin siyahısı",
+          "dynamic": true,
+          "id": "2203",
+          "type": "form"
+        },
+        {
+          "path": "/logistics/shipment_add",
+          "name": "Göndərişin yaradılması",
+          "dynamic": true,
+          "id": "2206",
+          "type": "form"
+        },
+        {
+          "path": "/logistics/postamat_set",
+          "name": "Postomat",
+          "dynamic": true,
+          "id": "2204",
+          "type": "form"
+        }
+      ],
+      "name": "Loqistika",
+      "dynamic": true,
+      "id": "2200"
+    },
+    {
+      "icon_url": "/icons/menu/payments.svg",
+      "path": "/payment",
+      "subs": [
+        {
+          "path": "/payment/utility_payment",
+          "name": "Yeni ödəniş",
+          "dynamic": true,
+          "id": "2404",
+          "type": "form"
+        },
+        {
+          "path": "/payment/payment_merchant",
+          "name": "Satıcı ödənişi",
+          "dynamic": true,
+          "id": "2403",
+          "type": "form"
+        },
+        {
+          "path": "/payment/payment_list",
+          "name": "Ödənişlərin siyahısı",
+          "dynamic": true,
+          "id": "2402",
+          "type": "form"
+        },
+        {
+          "path": "/payment/order",
+          "name": "order_lcl",
+          "dynamic": true,
+          "id": "2405",
+          "type": "form"
+        },
+        {
+          "path": "/payment/payment_reports",
+          "name": "Ödənişlərin hesabatı",
+          "dynamic": true,
+          "id": "2406",
+          "type": "form"
+        }
+      ],
+      "name": "Ödənişlər",
+      "dynamic": true,
+      "id": "2400"
+    },
+    {
+      "icon_url": "/icons/menu/account.svg",
+      "path": "/report",
+      "subs": [
+        {
+          "path": "/report/orders_list",
+          "name": "Bağlamalar",
+          "dynamic": true,
+          "id": "2501",
+          "type": "form"
+        },
+        {
+          "path": "/report/package_payment_list",
+          "name": "Bağlama ödənişləri",
+          "dynamic": true,
+          "id": "2502",
+          "type": "form"
+        },
+        {
+          "path": "/report/ips_report",
+          "name": "ips_report_lcl",
+          "dynamic": true,
+          "id": "2503",
+          "type": "form"
+        },
+        {
+          "path": "/report/management_report",
+          "name": "management_report_lcl",
+          "dynamic": true,
+          "id": "2504",
+          "type": "form"
+        }
+      ],
+      "name": "Hesabatlar",
+      "dynamic": true,
+      "id": "2500"
+    },
+    {
+      "icon_url": "/icons/menu/loan.svg",
+      "path": "/statistics",
+      "subs": [
+        {
+          "path": "/statistics/statistics_main",
+          "name": "Aylıq statistika ",
+          "dynamic": true,
+          "id": "2301",
+          "type": "form"
+        }
+      ],
+      "name": "Statistika ",
+      "dynamic": true,
+      "id": "2300"
+    },
+    {
+      "icon_url": "/icons/menu/loan.svg",
+      "path": "/lottery",
+      "subs": [
+        {
+          "path": "/lottery/lottery_check",
+          "name": "Lotereyanın Yoxlanılması",
+          "dynamic": true,
+          "id": "2601",
+          "type": "form"
+        },
+        {
+          "path": "/lottery/lottery_receive",
+          "name": "Lotereyanın Əlavə Olunması",
+          "dynamic": true,
+          "id": "2602",
+          "type": "form"
+        },
+        {
+          "path": "/lottery/lottery_users",
+          "name": "lottery_users_lcl",
+          "dynamic": true,
+          "id": "2603",
+          "type": "form"
+        },
+        {
+          "path": "/lottery/lottery_report",
+          "name": "lottery_report_lcl",
+          "dynamic": true,
+          "id": "2604",
+          "type": "form"
+        }
+      ],
+      "name": "Lotereya",
+      "dynamic": true,
+      "id": "2600"
+    },
+    {
+      "icon_url": "/icons/menu/loan.svg",
+      "path": "/parameter",
+      "subs": [
+        {
+          "path": "/parameter/localization",
+          "name": "Lokalizasiya",
+          "dynamic": true,
+          "id": "3001",
+          "type": "form"
+        },
+        {
+          "path": "/parameter/create_user",
+          "name": "İstifadəçilər",
+          "dynamic": true,
+          "id": "3002",
+          "type": "form"
+        },
+        {
+          "path": "/parameter/branches",
+          "name": "Filiallar və Poçt şöbələri",
+          "dynamic": true,
+          "id": "3003",
+          "type": "form"
+        }
+      ],
+      "name": "Parametrlər",
+      "dynamic": true,
+      "id": "3000"
+    },
+    {
+      "icon_url": "",
+      "path": "/agentbanking",
+      "subs": [
+        {
+          "icon_url": "",
+          "path": "/agentbanking/contract_create",
+          "name": "Müraciətin yaradılması",
+          "dynamic": true,
+          "id": "2701",
+          "type": "form"
+        },
+        {
+          "icon_url": "",
+          "path": "/agentbanking/contract_list",
+          "name": "Müqavilələr siyahısı",
+          "dynamic": true,
+          "id": "2702",
+          "type": "form"
+        },
+        {
+          "icon_url": "",
+          "path": "/agentbanking/contract_report",
+          "name": "Hesabat",
+          "dynamic": true,
+          "id": "2703",
+          "type": "form"
+        }
+      ],
+      "name": "Agent bankçılığ",
+      "dynamic": true,
+      "id": "2700"
+    },
+    {
+      "path": "x",
+      "subs": [
+        {
+          "path": "/notification/enquiry_form",
+          "name": "Sorgu vərəgəsi",
+          "dynamic": true,
+          "id": "2801",
+          "type": "form"
+        },
+        {
+          "path": "/notification/send_sms",
+          "name": "SMS göndər",
+          "dynamic": true,
+          "id": "2802",
+          "type": "form"
+        },
+        {
+          "path": "/notification/create_user",
+          "name": "İstifadəçilər",
+          "dynamic": true,
+          "id": "2803",
+          "type": "form"
+        },
+        {
+          "path": "/notification/sms_report",
+          "name": "SMS hesabatı",
+          "dynamic": true,
+          "id": "2804",
+          "type": "form"
+        }
+      ],
+      "name": "Bildiriş",
+      "dynamic": true,
+      "id": "2800"
+    },
+    {
+      "icon_url": "/icons/menu/loan.svg",
+      "path": "/transaction",
+      "subs": [
+        {
+          "path": "/transaction/transaction_approve",
+          "name": "Əməliyyatlar siyahısı",
+          "dynamic": true,
+          "id": "3101",
+          "type": "form"
+        },
+        {
+          "path": "/transaction/upload_transaction_document",
+          "name": "Sənəd əlavə et",
+          "dynamic": true,
+          "id": "3102",
+          "type": "form"
+        },
+        {
+          "path": "/transaction/transaction_list",
+          "name": "Əməliyyatlar siyahısı",
+          "dynamic": true,
+          "id": "3103",
+          "type": "form"
+        }
+      ],
+      "name": "Tranzaksiyalar",
+      "dynamic": true,
+      "id": "3100"
+    },
+    {
+      "path": "/learning",
+      "subs": [
+        {
+          "path": "/learning/test",
+          "name": "test_lcl",
+          "dynamic": true,
+          "id": "3301",
+          "type": "form"
+        }
+      ],
+      "name": "Təlim",
+      "dynamic": true,
+      "id": "3300"
+    },
+    {
+      "icon_url": "",
+      "path": "/customer",
+      "subs": [
+        {
+          "path": "/customer/customer_add",
+          "name": "customer_add_lcl",
+          "dynamic": true,
+          "id": "3201",
+          "type": "form"
+        }
+      ],
+      "name": "Müştəri",
+      "dynamic": true,
+      "id": "3200"
+    },
+    {
+      "path": "/hr",
+      "subs": [
+        {
+          "path": "/hr/question",
+          "name": "Imtahan sualları",
+          "dynamic": true,
+          "id": "3401",
+          "type": "form"
+        },
+        {
+          "path": "/hr/download_question",
+          "name": "Sualın yüklənməsi",
+          "dynamic": true,
+          "id": "3402",
+          "type": "form"
+        },
+        {
+          "path": "/hr/online_exam",
+          "name": "Onlayn imtahan",
+          "dynamic": true,
+          "id": "3403",
+          "type": "form"
+        },
+        {
+          "path": "/hr/exam_report",
+          "name": "Hesabat",
+          "dynamic": true,
+          "id": "3404",
+          "type": "form"
+        }
+      ],
+      "name": "HR",
+      "dynamic": true,
+      "id": "3400"
+    },
+    {
+      "icon_url": "",
+      "path": "/insurance",
+      "subs": [
+        {
+          "path": "/insurance/insurance_create",
+          "name": "Sığorta yarat",
+          "dynamic": true,
+          "id": "3501",
+          "type": "form"
+        },
+        {
+          "path": "/insurance/insurance_list",
+          "name": "Müqavilələr siyahısı",
+          "dynamic": true,
+          "id": "3502",
+          "type": "form"
+        }
+      ],
+      "name": "Sığorta",
+      "dynamic": true,
+      "id": "3500"
+    },
+    {
+      "path": "/ticketing",
+      "subs": [
+        {
+          "path": "/ticketing/permission_request",
+          "name": "İcazə sorğusu",
+          "dynamic": true,
+          "id": "3801",
+          "type": "form"
+        },
+        {
+          "path": "/ticketing/permission_request_list",
+          "name": "İcazə sorğuları siyahısı",
+          "dynamic": true,
+          "id": "3802",
+          "type": "form"
+        },
+        {
+          "path": "/ticketing/permission_request_report",
+          "name": "İcazə sorğusu hesabatı",
+          "dynamic": true,
+          "id": "3803",
+          "type": "form"
+        },
+        {
+          "path": "/ticketing/permission_management",
+          "name": "İcazələrin idarə olunması",
+          "dynamic": true,
+          "id": "3804",
+          "type": "form"
+        }
+      ],
+      "name": "Sorgular",
+      "dynamic": true,
+      "id": "3800"
+    }
+  ]
+}

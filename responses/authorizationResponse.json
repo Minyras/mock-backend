@@ -1,0 +1,157 @@
+{
+  "result": "success",
+  "companies": [
+    {
+      "icon_url": null,
+      "company_id": 1929,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0101",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": "/avatar/avatar_test.png",
+      "company_id": 1928,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0101",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1927,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0114",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1926,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0102",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1924,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ9095",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1923,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ9095",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1922,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ9095",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1921,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0101",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1920,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "APM1000",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1919,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0100",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1918,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0100",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1917,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ9095",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1916,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ9095",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1915,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0100",
+      "title_r": "<b>Position:<\/b> Accountant",
+      "status": "active"
+    },
+    {
+      "icon_url": null,
+      "company_id": 1912,
+      "name": "Jackson Samuel L",
+      "value_r": "Active",
+      "title": "<b>PIN:<\/b> 123456",
+      "value": "AZ0101",
+      "title_r": "<b>Position:<\/b> Director",
+      "status": "active"
+    }
+  ],
+  "form_id": "company_list",
+  "base_url": "https://core-dev.azerpost.az/public/dashboard"
+}

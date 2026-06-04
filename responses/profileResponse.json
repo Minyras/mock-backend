@@ -1,0 +1,16 @@
+{
+  "result": "success",
+  "base_url": "https://core-dev.azerpost.az/public/dashboard",
+  "content_data": {
+    "user_profile": {
+      "role_name": "AZP Admin",
+      "pin_code": "123456",
+      "icon": "person.png",
+      "id": 1929,
+      "state": "active",
+      "type": "individual",
+      "first_name": "Jackson Samuel L",
+      "email": "murad_post"
+    }
+  }
+}

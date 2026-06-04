@@ -1,0 +1,36 @@
+{
+  "result": "success",
+  "duration": 5,
+  "types": [
+    {
+      "id": "userpass",
+      "state": "enable"
+    }
+  ],
+  "stories": [
+    {
+      "image": "/stories/storie_home.png",
+      "description": "Azərpoçt-da şəxsi kabinet yaratmaqla siz sürətli ödənişlər və köçürmələr edə, xərclərinizə və gəlirlərinizə nəzarət edə bilərsiniz",
+      "title": "Xoş gəlmişsiniz"
+    },
+    {
+      "image": "/stories/storie_home_2x.png",
+      "description": "Azərpoçt-da şəxsi kabinet yaratmaqla siz sürətli ödənişlər və köçürmələr edə, xərclərinizə və gəlirlərinizə nəzarət edə bilərsiniz",
+      "title": "Xoş gəlmişsiniz"
+    },
+    {
+      "image": "/stories/storie_home_4x.png",
+      "description": "Azərpoçt-da şəxsi kabinet yaratmaqla siz sürətli ödənişlər və köçürmələr edə, xərclərinizə və gəlirlərinizə nəzarət edə bilərsiniz",
+      "title": "Xoş gəlmişsiniz"
+    },
+    {
+      "image": "/stories/storie_home.png",
+      "description": "Azərpoçt-da şəxsi kabinet yaratmaqla siz sürətli ödənişlər və köçürmələr edə, xərclərinizə və gəlirlərinizə nəzarət edə bilərsiniz",
+      "title": "Xoş gəlmişsiniz"
+    }
+  ],
+  "form_id": "login",
+  "base_url": "https://core-dev.azerpost.az/public/dashboard",
+  "description": "Test description",
+  "title": "Şəxsi kabinetə giriş"
+}
