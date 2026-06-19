@@ -16,6 +16,7 @@ const companyResponse = require("./responses/companyResponse.json");
 const loginResponse = require("./responses/loginResponse.json");
 const logoutResponse = require("./responses/logoutResponse.json");
 const token = require("./responses/token.json");
+const packageDetailsResponse = require("./responses/packageDetailsResponse.json");
 
 //utility
 app.post("/syncpass/payment/utility_payment", (req, res) => {
@@ -141,6 +142,48 @@ app.get("/syncpass/login", (req, res) => {
 //logout
 app.get("/syncpass/logout", (req, res) => {
   res.json(logoutResponse);
+});
+
+// package details
+app.post("/syncpass/package_details", (req, res) => {
+  const body = req.body;
+
+  if (
+    body.form_name === "package_details" &&
+    body.action === "trigger" &&
+    body.form_id === "dynamic" &&
+    body.form_data?.col_id === "package_id" &&
+    body.form_data?.object_id === "packages"
+  ) {
+    return res.json(packageDetailsResponse);
+  }
+
+  return res.status(400).json({
+    result: "error",
+    message: "Payload düzgün deyil",
+  });
+});
+
+app.get("/syncpass/package_details", (req, res) => {
+  res.json(packageDetailsResponse);
+});
+
+app.post("/syncpass/atomic/trigger", (req, res) => {
+  const body = req.body;
+
+  if (
+    body.form_name === "package_details" &&
+    body.action === "trigger" &&
+    body.form_id === "dynamic" &&
+    body.form_data?.col_id === "package_id"
+  ) {
+    return res.json(packageDetailsResponse);
+  }
+
+  return res.status(400).json({
+    result: "error",
+    message: "Payload düzgün deyil",
+  });
 });
 
 app.listen(3000, () => {
