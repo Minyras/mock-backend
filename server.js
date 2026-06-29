@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -17,6 +18,7 @@ const loginResponse = require("./responses/loginResponse.json");
 const logoutResponse = require("./responses/logoutResponse.json");
 const token = require("./responses/token.json");
 const packageDetailsResponse = require("./responses/packageDetailsResponse.json");
+const packageChangeTriggerResponse = require("./responses/packageChangeTriggerResponse.json");
 
 //utility
 app.post("/syncpass/payment/utility_payment", (req, res) => {
@@ -77,6 +79,20 @@ app.get("/syncpass/package/package_change", (req, res) => {
 });
 
 app.post("/syncpass/package/package_change", (req, res) => {
+  const body = req.body;
+
+  const isPackageChangeTrigger =
+    body.form_name === "order_list" &&
+    body.action === "trigger" &&
+    body.form_id === "dynamic" &&
+    body.form_data?.col_id === "package_id" &&
+    body.form_data?.object_id === "packages" &&
+    body.form_data?.type === "table";
+
+  if (isPackageChangeTrigger) {
+    return res.json(packageChangeTriggerResponse);
+  }
+
   res.json(packageChangeResponse);
 });
 
@@ -165,6 +181,22 @@ app.post("/syncpass/package_details", (req, res) => {
   });
 });
 
+app.get("/syncpass/package/package_details", (req, res) => {
+  if (String(req.query.id_list) === "433710") {
+    return res.json(packageChangeTriggerResponse);
+  }
+
+  res.json(packageDetailsResponse);
+});
+
+app.post("/syncpass/package/package_details", (req, res) => {
+  if (String(req.query.id_list) === "433710") {
+    return res.json(packageChangeTriggerResponse);
+  }
+
+  res.json(packageDetailsResponse);
+});
+
 // atomic trigger
 app.post("/syncpass/atomic/trigger", (req, res) => {
   const body = req.body;
@@ -189,6 +221,6 @@ app.get("/syncpass/package_details", (req, res) => {
   res.json(packageDetailsResponse);
 });
 
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });
